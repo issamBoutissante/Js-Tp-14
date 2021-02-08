@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tp 14</title>
+  </head>
+  <style>
+    * {
+      margin-bottom: 10px;
+    }
+  </style>
+  <body>
+    <form>
+      <fieldset>
+        <legend>Calcul frais transfert de colis</legend>
+        N de colis:
+        <input type="text" id="colis" style="margin-left: 20px" /><br />
+        Mode de Transfert:
+        <input type="radio" name="mode" value="express" />Express
+        <input type="radio" name="mode" checked value="normal" />Normal
+        <br />
+        Distance:<input
+          type="text"
+          id="distance"
+          style="margin-left: 20px"
+        />KM<br />
+        Poids:<input type="text" id="poids" style="margin-left: 20px" />KG<br />
+        Total:<input
+          type="text"
+          readonly
+          id="total"
+          style="margin-left: 20px"
+        /><br />
+        <input type="button" value="Calculer" id="calculer" />
+        <input type="button" value="Effacer" id="effacer" />
+      </fieldset>
+    </form>
+  </body>
+  <script src="./index.js"></script>
+</html>
